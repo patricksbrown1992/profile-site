@@ -97,7 +97,9 @@ h6 {
   background-position: top 10%;
   background-repeat: no-repeat;
   background-size: auto;
-  
+}
+.masthead img {
+  max-height: 280px;
 }
 
 .masthead h1 {
