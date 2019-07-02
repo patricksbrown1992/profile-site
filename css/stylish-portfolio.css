@@ -234,6 +234,10 @@ h6 {
   max-width: 30rem;
 }
 
+#portfolio{
+  background-color: green;
+}
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -306,9 +310,11 @@ h6 {
   }
 }
 
+
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-color: purple;
 }
 
 footer.footer .social-link {
