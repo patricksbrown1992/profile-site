@@ -93,12 +93,22 @@ h6 {
   height: auto; 
   padding-top: 8rem; 
   padding-bottom: 8rem; 
-  background-image: url("../img/dog-using-laptop-computer.jpg");
+  /* background-image: url("../img/dog-using-laptop-computer.jpg"); */
   background-position: top 10%;
   background-repeat: no-repeat;
   background-size: auto;
 }
-.masthead img {
+
+.dog-photo{
+  width: 100vw;
+  /* height: 100vh; */
+  position: absolute;
+  top:0;
+  left:0;
+  
+  z-index: -1;
+}
+.profile-photo{
   max-height: 280px;
 }
 
