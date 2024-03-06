@@ -1,4 +1,4 @@
-# [personal_site](https://asduveneck.github.io/personal_site/)
+# [personal_site](https://github.com/patricksbrown1992/profile-site)
 
   Personal Site built with the HTML5UP template, Hyperspace.
   Button styling for projects was modified from Malyarchuk.
