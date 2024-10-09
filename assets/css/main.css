@@ -4243,3 +4243,55 @@ input, select, textarea {
 		text-align: right;
 
 	}
+
+	/* Ensure the image is responsive and centered */
+.image img {
+    max-width: 100%;  /* Image scales down based on container size */
+    height: auto;     /* Maintain aspect ratio */
+    display: block;   /* Removes space beneath images */
+    margin: 0 auto;   /* Center the image */
+}
+
+/* Main wrapper for the section */
+.wrapper.style2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  /* Center all content (image + text) horizontally */
+    max-width: 1200px;        /* Limit the maximum width of the entire section */
+    margin: 0 auto;           /* Center the whole section */
+    padding: 20px;            /* Add padding to prevent content from touching the edges */
+    box-sizing: border-box;   /* Include padding and border in the element's width */
+}
+
+/* Adjust image size and behavior */
+.wrapper.style2 .image {
+    flex: 1 1 100%;          /* Make sure the image container can take full width */
+    text-align: center;      /* Center the image container itself */
+    max-width: 600px;        /* Limit max width for image to prevent it from becoming too big */
+    margin: 0 auto;          /* Center the image container */
+}
+
+/* Adjust text content size and positioning */
+.wrapper.style2 .content {
+    flex: 1 1 100%;          /* Make content take full width initially */
+    padding: 20px;           /* Add padding for spacing */
+    max-width: 800px;        /* Limit max width for text */
+    margin: 0 auto;          /* Center the text container */
+    text-align: left;        /* Align text to the left */
+}
+
+/* Responsive behavior for smaller screens */
+@media screen and (max-width: 768px) {
+    .wrapper.style2 {
+        flex-direction: column;   /* Stack image and content vertically on small screens */
+    }
+
+    .wrapper.style2 .image,
+    .wrapper.style2 .content {
+        flex: 1 1 100%;          /* Full width for both image and text */
+        max-width: 100%;         /* Ensure nothing exceeds screen width */
+        margin: 0 auto;          /* Center the elements */
+        text-align: center;      /* Center text on smaller screens for better appearance */
+    }
+}
